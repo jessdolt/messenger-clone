@@ -2,6 +2,7 @@
 import { User } from "@prisma/client"
 import React from "react"
 import UserBox from "../UserBox"
+import ListContainer from "@/app/components/ListContainer"
 
 interface UserListProps {
   items: User[]
@@ -9,22 +10,7 @@ interface UserListProps {
 
 const UserList: React.FC<UserListProps> = ({ items }) => {
   return (
-    <aside
-      className="
-      fixed 
-      inset-y-0 
-      pb-20
-      lg:pb-0
-      lg:left-20 
-      lg:w-80 
-      lg:block
-      overflow-y-auto 
-      border-r 
-      border-gray-200
-      block w-full left-0
-      bg-white
-      "
-    >
+    <ListContainer>
       <div className="px-5">
         <div className="flex-col">
           <div
@@ -41,7 +27,7 @@ const UserList: React.FC<UserListProps> = ({ items }) => {
           <UserBox key={item.id} data={item} />
         ))}
       </div>
-    </aside>
+    </ListContainer>
   )
 }
 
