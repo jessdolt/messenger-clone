@@ -1,5 +1,5 @@
-import Image from "next/image";
-import AuthForm from "./components/AuthForm";
+import Image from "next/image"
+import AuthForm from "./components/AuthForm"
 
 export default function Home() {
   return (
@@ -8,7 +8,7 @@ export default function Home() {
         <Image
           height={48}
           width={48}
-          src="/logo.png"
+          src="/images/logo.png"
           alt="logo"
           className="mx-auto"
         />
@@ -18,5 +18,5 @@ export default function Home() {
       </div>
       <AuthForm />
     </div>
-  );
+  )
 }
