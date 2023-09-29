@@ -45,7 +45,7 @@ const Modal: React.FC<ModalProps> = ({ isOpen, onClose, children }) => {
                     onClick={onClose}
                     type="button"
                     className="rounded-md bg-white text-gray-500 
-                    focus:outline-none focus:ring-2 focus:ring-sky-500 focus:ring-offset-2"
+                    focus:outline-none focus:ring-2 focus:ring-primary focus:ring-offset-2"
                   >
                     <span className="sr-only">Close</span>
                     <IoClose className="h-6 w-6" />
