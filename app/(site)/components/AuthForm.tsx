@@ -25,7 +25,7 @@ const AuthForm = () => {
     if (status === "authenticated") {
       router.push("/users")
     }
-  }, [status])
+  }, [status, router])
 
   const [variant, setVariant] = useState<Variant>(ACTION.LOGIN)
   const [isLoading, setIsLoading] = useState(false)
